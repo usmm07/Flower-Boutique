@@ -1,38 +1,53 @@
 body {
-  margin: 0;
-  padding: 0;
   font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(to bottom right, #fff0f5, #ffe4e1);
-  min-height: 100vh;
-  text-align: center;
-}
-
-h1 {
-  color: #b52e5e;
-  margin-top: 1rem;
-}
-
-.subtitle {
   margin: 0;
-  font-size: 1rem;
-  color: #444;
+  padding-bottom: 120px;
+  background: #fff8f8;
 }
 
-.bouquet-container {
+.tabs {
+  display: flex;
+  justify-content: center;
+  background: #ffe4ec;
+}
+
+.tab-btn {
+  flex: 1;
+  padding: 1rem;
+  font-weight: bold;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: #b52e5e;
+  font-size: 1rem;
+}
+
+.tab-btn.active {
+  background: #ffc0cb;
+}
+
+.tab {
+  display: none;
+  padding: 1rem;
+}
+
+.tab.active {
+  display: block;
+}
+
+#bouquetContainer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 1rem;
   gap: 1rem;
 }
 
 .card {
-  width: 100%;
-  max-width: 280px;
+  width: 260px;
   background: #fff;
-  border-radius: 12px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
 .card img {
@@ -43,48 +58,49 @@ h1 {
 
 .card-content {
   padding: 0.8rem;
+  text-align: center;
 }
 
 .card-title {
   font-weight: bold;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.3rem;
 }
 
 .card-price {
   color: #b52e5e;
-  font-weight: bold;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.6rem;
 }
 
 .add-btn {
   padding: 0.5rem;
-  width: 100%;
-  background-color: #b52e5e;
+  background: #b52e5e;
   color: #fff;
   border: none;
-  border-radius: 8px;
+  border-radius: 6px;
+  width: 100%;
+  font-size: 1rem;
   cursor: pointer;
 }
 
 .cart {
-  position: sticky;
+  position: fixed;
   bottom: 0;
-  background: #fff8fb;
-  padding: 1rem;
-  border-top: 1px solid #ddd;
-  box-shadow: 0 -2px 10px rgba(0,0,0,0.05);
+  left: 0;
+  right: 0;
+  background: #fff0f5;
+  border-top: 2px solid #b52e5e;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  gap: 1rem;
+  padding: 1rem;
   font-weight: bold;
+  z-index: 10;
 }
 
-#checkout-btn {
-  padding: 0.5rem 1rem;
-  background-color: #8e2349;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  padding: 1rem;
+  background: #fff5f5;
+  color: #555;
 }
