@@ -3,13 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Flowers Boutique</title>
+  <title>Flower Boutique</title>
   <link rel="stylesheet" href="style.css" />
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
 </head>
 <body>
-  <h1>🌸 Цветочный бутик – Ташкент</h1>
+  <h1>🌸 Flower Boutique</h1>
+  <p class="subtitle">Доставка по Ташкенту за 2 часа</p>
+
   <div class="bouquet-container" id="bouquetContainer"></div>
+
+  <div class="cart" id="cart">
+    <span id="cart-count">0 товаров</span>
+    <span id="cart-total">0 UZS</span>
+    <button id="checkout-btn">🛍 Оформить заказ</button>
+  </div>
 
   <script src="bouquets.js"></script>
 </body>
