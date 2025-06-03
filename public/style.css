@@ -1,38 +1,38 @@
 body {
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-  background-color: #fff;
   margin: 0;
-  padding: 1rem;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom right, #fff0f5, #ffe4e1);
+  min-height: 100vh;
   text-align: center;
 }
 
 h1 {
   color: #b52e5e;
-  font-size: 1.4rem;
-  margin-bottom: 1rem;
-  line-height: 1.2;
+  margin-top: 1rem;
+}
+
+.subtitle {
+  margin: 0;
+  font-size: 1rem;
+  color: #444;
 }
 
 .bouquet-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding: 1rem;
   gap: 1rem;
 }
 
 .card {
   width: 100%;
   max-width: 280px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  overflow: hidden;
   background: #fff;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-  transition: transform 0.2s ease;
-}
-
-.card:hover {
-  transform: scale(1.01);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
 .card img {
@@ -46,29 +46,45 @@ h1 {
 }
 
 .card-title {
-  font-size: 1rem;
-  margin-bottom: 0.2rem;
-  color: #333;
+  font-weight: bold;
+  margin-bottom: 0.4rem;
 }
 
 .card-price {
-  font-weight: bold;
-  font-size: 1rem;
   color: #b52e5e;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
 }
 
-.order-btn {
-  margin-top: 0.5rem;
-  padding: 0.6rem 1.2rem;
+.add-btn {
+  padding: 0.5rem;
+  width: 100%;
   background-color: #b52e5e;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.cart {
+  position: sticky;
+  bottom: 0;
+  background: #fff8fb;
+  padding: 1rem;
+  border-top: 1px solid #ddd;
+  box-shadow: 0 -2px 10px rgba(0,0,0,0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  font-weight: bold;
+}
+
+#checkout-btn {
+  padding: 0.5rem 1rem;
+  background-color: #8e2349;
   color: white;
   border: none;
   border-radius: 8px;
-  font-size: 1rem;
   cursor: pointer;
-  width: 100%;
-}
-
-.order-btn:hover {
-  background-color: #8e2349;
 }
